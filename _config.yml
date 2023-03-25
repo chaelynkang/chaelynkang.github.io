@@ -16,16 +16,16 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "chaelyn's Engineer Note"
+title                    : "Chaelyn's Engineer Note"
 title_separator          : "|"
 subtitle                 : #
-name                     : "chaelyn's Engineer Note"
-description              : "chaelyn's Engineer Note"
+name                     : "Chaelyn's Engineer Note"
+description              : "Chaelyn's Engineer Note"
 url                      : "https://chaelynkang.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "chaelynkang/chaelynkang.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # "/assets/images/189044597.png"
+logo                     : "\assets\images\189044597.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
