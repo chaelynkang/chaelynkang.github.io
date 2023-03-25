@@ -8,10 +8,9 @@ main:
 docs:
   - title: "EDU"
     children:
-      - title: "Category"
-        url: /categories/
-      - title: "Tag"
-        url: /tags/   
+      - title: "keduit"
+        url: /keduit/
+      
 
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
