@@ -25,9 +25,9 @@ url                      : "https://chaelynkang.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "chaelynkang/chaelynkang.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "chaelynkang.github.io\assets\imanges\189044597.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
+breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Chaelyn Kang"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "미래의 클라우드 아키텍트 IT BLOG"
+  bio              : "IT BLOG"
   location         : "South Korea"
   email            : "kchl1216@naver.com"
   links:
