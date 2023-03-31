@@ -1,8 +1,8 @@
 ---
 layout: single
-title: " Linux FTP Server "
+title: " IP UDP TCP Header "
 categories: keduit
-tags: [ linux, OS, Linuxserver, FTP ]
+tags: [ iP, UDP, FTP, Header ]
 toc: true 
 comments: true
 author_profile: true
