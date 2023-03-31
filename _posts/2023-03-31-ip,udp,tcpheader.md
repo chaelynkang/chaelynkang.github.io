@@ -96,12 +96,12 @@ sidebar:
    * 최소 값은 (5words) 20bytes , 최대 60byetes (15words) 의 offset까지 표현할 수 있다.
    * 옵션 필드의 길이가 고정되어 있지않아 필요한 필드이다.
 
-6. `Reserved` (6bits)  
+6. `Reserved` (4bits)  
    * 미래를 위해 예약된 필드로 모두 0으로 설정한다.
   
-7. `Flags` (9bits)
+7. `Flags` (8bits)
    * TCP Segment에 대한 정보를 제공하고 전송 중 동작을 제어하는 9bits flags field 이다. 
-   * 혼잡 제어 기능의 향상을 위해 Reserved 필드를 사용하여 Ns, CWR, ECE 플래그가 추가 되었다.
+   * 혼잡 제어 기능의 향상을 위해 Reserved 필드를 사용하여 NS, CWR, ECE 플래그가 추가 되었다.
    * 각 비트는 다음과 같은 특정 의미를 갖는다.
 
 ```
