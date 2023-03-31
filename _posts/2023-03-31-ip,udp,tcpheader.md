@@ -1,13 +1,10 @@
 ---
 layout: single
-title: "IPv4, TCP, UDP Header"
+title: " Linux FTP Server "
 categories: keduit
-permalink: /categories/keduit/
-tags: [IPv4, TCP, UDP, Header ]
+tags: [ linux, OS, Linuxserver, FTP ]
 toc: true 
 comments: true
-published: true
-taxonomy: keduit
 author_profile: true
 sidebar:
     nav: "docs"
