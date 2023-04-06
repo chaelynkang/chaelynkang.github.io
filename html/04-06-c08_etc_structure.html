@@ -5,6 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        li {
+            list-style:none;
+            float: left;
+            padding: 15px;
+        }
+        li:first-child {border-radius: 10px 0 0 10px;}
+        li:last-child {border-radius: 0 10px 10px 0;}
+
+        li:nth-child(2n) {background-color: rgb(209, 209, 209);
+                          font-size: 1.5em;
+        }
+        li:nth-child(2n-1) {background-color: rgb(55, 63, 66);
+                            font-size: 1.0em;
+        }
+    </style>
 </head>
 <body>
     <ul>
