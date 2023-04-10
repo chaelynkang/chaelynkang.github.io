@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Linux DHCP Server "
+title: " Linux DHCP Server "
 categories: keduit
 tags: [ linux, OS, DHCP Server, Samba Server ]
 toc: true 
