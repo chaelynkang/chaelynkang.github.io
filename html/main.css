@@ -1,0 +1,45 @@
+* { margin:0; padding:0; font-family:'맑은 고딕', Arial, Helvetica, sans-serif; }
+body { 
+    background-color: #e6e6e6; 
+    width: 960px; 
+    margin:0 auto;
+    }
+
+
+
+    #page-wrapper {
+        background-color: white;
+        margin: 40px 0;
+        padding: 10px 20px;
+
+    }
+
+
+    a { text-decoration: none; }
+    li { list-style: none; }
+
+    nav {
+        border-top: 1px solid #c8c8c8;
+        border-bottom: 1px solid #c8c8c8;
+        margin-bottom: 20px;
+        height: 40px;
+
+    }
+    #nav-left {
+        float: left;
+
+    }
+
+    #nav-right {
+        float: right;
+    }
+    .outer-menu-item { }
+    .outer-menu-li {
+        float: left;
+        position: relative;
+    }
+
+    .inner-menu {
+        display: none;
+        
+    }
