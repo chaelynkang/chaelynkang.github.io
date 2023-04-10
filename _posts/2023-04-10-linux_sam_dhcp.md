@@ -40,6 +40,22 @@ WIN701 => sysdm.cpl WORKGROUP 확인.
 
 * WIN701에서 clman (1111) \\192.168.10.100 으로 접속됨을 확인할 수 있다.
 
+```
+<win702>
+- 네트워크드라이브 연결 => \\192.168.10.100\share로 연결 가능.
+```
+
+```
+<linux>
+- vi /etc/hostname => dd로 삭제 후 samba로 변경.
+
+<WIN701>
+- C:\Windows\System32\drivers hosts.sys 파일 바탕화면으로 옮긴 후 .text 연결하여 192.168.10.100 samba로 추가.
+- 네트워크드라이브 연결 => \\samba\share로 연결 가능.
+```
+
+---
+
 ---
 
 # DHCP Server
@@ -60,7 +76,7 @@ max-lease-time 50000;
 
 ```
 yum -y install dhcp
-enforce 0
+getenforce
 firewall-config             => dhcp 체크.
 ps -ef | grep dnsmasq   => 프로레스 충돌 확인.
 kill -9 XXXX => root 빼고는 삭제.
@@ -70,18 +86,3 @@ systemctl restart dhcpd  =>  vi 편집기 오류나면 오류 메세지창 뜸.
 systemctl enable dhcpd
 ```
 
-```
-<win702>
-- 네트워크드라이브 연결 => \\192.168.10.100\share로 연결 가능.
-```
-
-```
-<linux>
-- vi /etc/hostname => dd로 삭제 후 samba로 변경.
-
-<WIN701>
-- C:\Windows\System32\drivers hosts.sys 파일 바탕화면으로 옮긴 후 .text 연결하여 192.168.10.100 samba로 추가.
-- 네트워크드라이브 연결 => \\samba\share로 연결 가능.
-```
-
----
