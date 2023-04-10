@@ -56,11 +56,19 @@ WIN701 => sysdm.cpl WORKGROUP 확인.
 
 ---
 
----
-
 # DHCP Server
 
+
+
 ```
+yum -y install dhcp
+getenforce
+firewall-config             => dhcp 체크.
+ps -ef | grep dnsmasq   => 프로레스 충돌 확인.
+kill -9 XXXX => root 빼고는 삭제.
+systemctl disable dnsmasq
+vi /etc/dhcp/dhcpd.conf
+!
 subnet 192.168.10.0 netmask
 255.255.255.0 {
 option routers 192.168.10.254;
@@ -71,18 +79,8 @@ range dynamic-bootp 192.168.10.1 192.168.10.99;
 default-lease-time 10000;
 max-lease-time 50000;
 }
-```
-
-
-```
-yum -y install dhcp
-getenforce
-firewall-config             => dhcp 체크.
-ps -ef | grep dnsmasq   => 프로레스 충돌 확인.
-kill -9 XXXX => root 빼고는 삭제.
-systemctl disable dnsmasq
-vi /etc/dhcp/dhcpd.conf  => 위 내용으로 편집.
+:wq
 systemctl restart dhcpd  =>  vi 편집기 오류나면 오류 메세지창 뜸.
 systemctl enable dhcpd
 ```
-
+---
