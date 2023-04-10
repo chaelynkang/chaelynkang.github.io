@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Linux Server (2) "
+title: "Linux DHCP Server "
 categories: keduit
 tags: [ linux, OS, DHCP Server, Samba Server ]
 toc: true 
@@ -82,3 +82,6 @@ systemctl enable dhcpd
 <WIN701>
 - C:\Windows\System32\drivers hosts.sys 파일 바탕화면으로 옮긴 후 .text 연결하여 192.168.10.100 samba로 추가.
 - 네트워크드라이브 연결 => \\samba\share로 연결 가능.
+```
+
+---
