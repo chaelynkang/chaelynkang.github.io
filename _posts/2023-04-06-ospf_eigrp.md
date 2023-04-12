@@ -2,7 +2,7 @@
 layout: single
 title: " OSPF, EIGRP Redistribute  "
 categories: keduit
-tags: [ OSPF, DynamicRouting, Protocol, EIGRP, Redistribute ]
+tags: [ OSPF, Protocol, EIGRP, ]
 toc: true 
 comments: true
 author_profile: true
