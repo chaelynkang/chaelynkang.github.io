@@ -2,7 +2,7 @@
 layout: single
 title: "Cisco IOS hardware"
 categories: keduit
-tags: [ Cisco, Ios, hardware, router, switch ]
+tags: [ CiscoIOS ]
 toc: true
 comments: true
 author_profile: true

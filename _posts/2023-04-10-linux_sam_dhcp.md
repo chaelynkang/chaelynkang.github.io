@@ -2,7 +2,7 @@
 layout: single
 title: " Linux DHCP Server "
 categories: keduit
-tags: [ linux, OS, DHCP Server, Samba Server ]
+tags: [ OS ]
 toc: true 
 comments: true
 author_profile: true
