@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const date = new Date();
+        const hours = date.getHours();
+
+        if (hours < 5) {
+            alert ("자.");
+        } else if (hours < 7) {
+            alert ("출근준비.");
+        } else if (hours < 9) {
+            alert ("출근.");
+        } else if (hours < 12) {
+            alert ("오전일과.");
+        } else if (hours < 14) {
+            alert ("밥묵자.");
+        } 
+
+        const month = date.getMonth() + 1;
+
+        if (month >= 3 && month <= 5) {
+            alert("봄입니다.");
+        } else if (month >= 6 && month <= 8) {
+            alert ("여름입니다.");
+        } else if (month >= 9 && month <= 11) {
+            alert ("가을입니다.");
+        } else if (month >= 12 && month <= 2) {
+            alert ("겨울입니다.");
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

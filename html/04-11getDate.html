@@ -6,7 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        var date = new data();
+        const date = new Date();
+        alert(date);
+        const year = date.getFullYear();
+        const month = date.getMonth() + 1;
+        const day = date.getDate();
+        const week = date.getDay();
+        const hours = date.getHours();
+        const minutes = date.getMinutes();
+        const seconds = date.getSeconds();
+        const weekArr = ['일', '월', '화', '수', '목', '금', '토' ];
+        console.log(year + "년" + month + "월" + day + "일" + weekArr[week] + "요일" ); 
+        console.log(hours + "시" + minutes + "분" + seconds + "초" );
+
+        if (hours < 12) {
+            alert ('오전입니다.');
+
+        }
+        if (hours >= 12) {
+            alert ('오후입니다.');
+        }
+            if (hours < 12) {
+                alert('오전입니다.');
+        } else {
+            alert('오후입니다.')
+        }
+        
     </script>
 </head>
 <body>
