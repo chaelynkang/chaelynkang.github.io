@@ -2,7 +2,7 @@
 layout: single
 title: " IP UDP TCP Header "
 categories: keduit
-tags: [ IP, UDP, FTP, Header ]
+tags: [ IP, UDP, FTP, ]
 toc: true 
 comments: true
 author_profile: true
