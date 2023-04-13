@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function(){        
+        document.querySelector('h1').style.backgroundColor = 'violet';
+        // document.querySelector('h2').style.color = 'green';
+        // document.getElementById('header').style.color = 'blue'; 
+        const header = document.getElementById('header');
+        
+        header.style.color = 'red';
+        header.style.backgroundColor = 'blue';
+        header.innerHTML = 'From JavaScript';
+
+        const h2 = document.querySelector('h2');
+        h2.style.color = 'pink';
+        h2.style.backgroundColor = 'green';
+        h2.innerHTML = 'From JavaScript';
+
+        let output = '';
+        for (let i=0; i <10; i++){
+            output += '<h1>header - ' + i + '<h1>';
+        }; 
+        
+
+        //document.body.textContent = output;
+        document.body.innerHTML = output;
+        };
+    </script>
+</head>
+<body>
+    <h1>Process - 1</h1>
+    <h2>Process - 2</h2>
+    <h1 id="header">Header</h1>
+</body>
+</html>
