@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function() {
+            // 속성을 지정.
+            document.body.setAttribute('data-custom', 'value 입니다.');
+
+            // 속성을 추출.
+            const data = document.body.getAttribute ('data-custom');
+            console.log(data);
+
+
+            const clock = document.getElementById('clock');
+            setInterval(function(){
+                const now = new Date();
+                clock.innerHTML = now.toString();
+            }, 1000)
+        }
+    </script>
+</head>
+<body>
+    <h1 id="clock"></h1>
+</body>
+</html>
