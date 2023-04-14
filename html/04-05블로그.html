@@ -3,6 +3,16 @@
 <head>
     <title>HTML5 기본 프로젝트</title>
     <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.outer-menu-li').hover(function(){
+                $(this).find('.inner-menu').show();
+            }, function(){
+                $(this).find('.inner-menu').hide();
+            })
+        })
+    </script>
 </head>
 <body>
 
