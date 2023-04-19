@@ -1,20 +1,3 @@
----
-layout: single
-title: " Python 2일차 "
-categories: keduit
-tags: [ Python, ]
-toc: true 
-comments: true
-author_profile: true
-sidebar:
-    nav: "docs"
----
-
-# 파이썬 - 연산자 실습
-
-![image](https://user-images.githubusercontent.com/128279031/232937297-0763c8c4-1b49-44c3-82e9-1dd8dd6da100.png)
-
-```
 ## 변수 선언 부분 ##
 money, c500, c100, c50, c10 = 0, 0, 0, 0, 0
 
@@ -38,4 +21,4 @@ print(" 100원짜리 ==> %d개 " % c100)
 print(" 50원짜리 ===> %d개 " % c50)
 print(" 10원짜리 ===> %d개 " % c10)
 print(" 바꾸지 못한 잔돈 ===> %d원 \n" % money)
-```
+
