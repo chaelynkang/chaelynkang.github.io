@@ -35,7 +35,7 @@ spec:
             path: /etc/ssl/certs
         - name: mysql-persistent-storage
           persistentVolumeClaim:
-            claimName: mysql-pv-claim
+            claimName: team1-project-pvc
 
 ---
 apiVersion: v1
@@ -50,3 +50,22 @@ spec:
       port: 3306
       targetPort: 3306
   type: LoadBalancer
+
+
+...
+spec:
+  containers:
+    - name: mysql
+      ...
+      env:
+        - name: GOOGLE_APPLICATION_CREDENTIALS
+          value: /secrets/cloudsql/credentials.json
+      volumeMounts:
+        - name: cloudsql-instance-credentials
+          mountPath: /secrets/cloudsql
+          readOnly: true
+  volumes:
+    - name: cloudsql-instance-credentials
+      secret:
+        secretName: cloudsql-instance-credentials
+...
